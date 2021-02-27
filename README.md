@@ -1,24 +1,23 @@
-# README
+竹亭入退店アプリ
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+・入店、退店、店舗のリアルタイム状況、ログイン機能、ユーザーページ、履歴
 
-Things you may want to cover:
+データベース：4店舗＋ユーザー
 
-* Ruby version
+シート1
 
-* System dependencies
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+ユーザーデータベース
+id,email,pass,name,birth,seibetsu
+1,soda@gmail.com,123,そだ,19910109,men
+2
+出退勤データベース
+id,user_id,tenpo_id,start,end
+1,1,2,19:42:00
+2
+店舗データベース
+id,tenpo
+1,鹿屋
+2,田上
+3,谷山
+4,隼人国分
