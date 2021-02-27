@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get 'shop/show'
+
+  get 'attendance/show'
+
   get 'user/show'
 
   get 'static_pages/top'
