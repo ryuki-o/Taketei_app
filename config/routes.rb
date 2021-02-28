@@ -1,8 +1,11 @@
 Rails.application.routes.draw do
 
   root 'static_pages#top' #top
+  get '/signup', to: 'users#new'
+  resources :users
 
   get 'shop/show' #出退勤画面
+  
 
   #login session
   get    '/login',   to: 'sessions#new'
