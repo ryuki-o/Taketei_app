@@ -1,2 +1,8 @@
-<h1>User#show</h1>
-<p>Find me in app/views/user/show.html.erb</p>
+<h1>TODOアプリ</h1>
+
+<% if logged_in? %>
+  <%= render 'user/logged_in' %>
+<% else %>
+  <%= render 'user/not_logged_in' %>
+
+<% end %>
