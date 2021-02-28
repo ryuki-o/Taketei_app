@@ -1,8 +1,8 @@
-<h1>個人ページ</h1>
+<h1>User Info</h1>
 
 <% if logged_in? %>
-  <%= render 'user/logged_in' %>
+  <%= render 'shop/show' %>
 <% else %>
-  <%= render 'user/not_logged_in' %>
+  <%= render 'sessions/new' %>
 
 <% end %>
